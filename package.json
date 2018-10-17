@@ -1,9 +1,40 @@
 {
-  "name": "js-analytics",
+  "name": "@docomodigital/js-analytics",
   "version": "0.1.0",
-  "description": "",
+  "description": "Interface for Google Analytics to track events, pageviews and custom dimensions",
   "main": "dist/index.js",
   "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/docomodigital/js-analytics.git"
+  },
+  "keywords": [
+    "google",
+    "analytics",
+    "ga",
+    "javascript",
+    "docomo",
+    "custom",
+    "dimensions"
+  ],
+  "contributors": [
+    {
+      "name": "Aurelio Merenda",
+      "email": "aurelio.merenda@docomogital.com"
+    },
+    {
+      "name": "Davide Gheri",
+      "email": "davide.gheri@docomogital.com"
+    },
+    {
+      "name": "Lorenzo Mussi",
+      "email": "lorenzo.mussi@docomogital.com"
+    }
+  ],
+  "bugs": {
+    "url": "https://github.com/docomodigital/js-analytics/issues"
+  },
+  "homepage": "https://github.com/docomodigital/js-analytics#readme",
   "scripts": {
     "build": "rimraf ./dist && cross-env NODE_ENV=production webpack",
     "doc": "rimraf ./docs/${npm_package_version} && jsdoc -c .jsdoc.json -d ./docs/${npm_package_version}/",
