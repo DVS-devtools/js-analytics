@@ -2,7 +2,7 @@
 
 [![Build Status](https://travis-ci.org/docomogital/js-analytics.svg?branch=master)](https://travis-ci.org/docomogital/js-analytics)
 [![Coverage Status](https://coveralls.io/repos/github/docomogital/js-analytics/badge.svg)](https://coveralls.io/github/docomogital/js-analytics)
-[![npm version](https://badge.fury.io/js/%40docomodigital%2Fjs-analytics.svg)](https://badge.fury.io/js/%40docomodigital%2Fjs-analytics)
+[![npm version](https://badge.fury.io/js/%40docomodigital%2Fjs-analytics.svg)](https://badge.fury.io/js/%40docomodigital%2Fjs-analytics) [![Greenkeeper badge](https://badges.greenkeeper.io/docomodigital/js-analytics.svg)](https://greenkeeper.io/)
 
 js-analytics is a interface for Google Analytics to tracking events, pageviews and custom dimensions
 
