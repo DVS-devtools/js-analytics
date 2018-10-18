@@ -13,6 +13,8 @@ import JsAnalytics from '@docomogital/js-analytics'
 // init JsAnalytics and set 'User' custom dim to slot #3 and 'Valuable' to slot #4
 JsAnalytics.init({
 	enabled: true,
+	/* if you pass analyticsID, analytics-adapter call ga('create') for you */
+    analyticsID: 'UA-123456789-1',
 	logger: console,
 	dimensions: {
 		User: 3,

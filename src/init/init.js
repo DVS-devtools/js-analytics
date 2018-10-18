@@ -4,6 +4,8 @@
  * @description Initialize Analytics and set up the general configurations.
  * @param {Object} options (see attributes below)
  * @param {boolean} [options.enabled=true] enable/disable tracking on Google Analytics
+ * @param {String} [options.analyticsID=null] analyticsID to initialize GA library
+ * (it is used for ga('create', analyticsID, 'auto'))
  * @param {Object} [options.logger=Object()] logging methods to use (see example below),
  * if undefined there will be no logs
  * @param {Object[]} [options.dimensions=Object()]
@@ -15,6 +17,7 @@
  * // Analytics with console as logger
  *  JsAnalytics.init({
  *      enabled: true,
+ *      analyticsID: 'UA-123456789-1',
  *      logger: console,
  *      dimensions: {
  *          'UserStatus': 1,
@@ -29,6 +32,7 @@
  * // Analytics with no logs
  *  JsAnalytics.init({
  *      enabled: true,
+ *      analyticsID: 'UA-123456789-1',
  *      dimensions: {
  *          'UserStatus': 1,
  *          'AccessType': 2,
@@ -65,6 +69,8 @@ export default (options) => {
     if (options) {
         if (options.ga) {
             global.ga = options.ga;
+        } else {
+            global.ga = window.ga;
         }
 
         if (options.dimensions) {
@@ -77,6 +83,10 @@ export default (options) => {
                 || options.enabled === 1
                 || options.enabled === '1'
             );
+        }
+
+        if (global.enabled && options.analyticsID) {
+            global.ga('create', options.analyticsID, 'auto');
         }
 
         if (options.logger) {
