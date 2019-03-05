@@ -1,6 +1,6 @@
 # js-analytics
 
-## [!!!] The source code of this package is on https://github.com/docomodigital/js-utils](https://github.com/docomodigital/js-utils), this repository will be removed asap
+## [!!!] The source code of this package is on [https://github.com/docomodigital/js-utils](https://github.com/docomodigital/js-utils), this repository will be removed asap
 
 [![Build Status](https://travis-ci.com/docomodigital/js-analytics.svg?branch=master)](https://travis-ci.com/docomodigital/js-analytics)
 [![Coverage Status](https://coveralls.io/repos/github/docomodigital/js-analytics/badge.svg)](https://coveralls.io/github/docomodigital/js-analytics)
